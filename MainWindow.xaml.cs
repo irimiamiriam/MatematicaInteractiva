@@ -23,7 +23,7 @@ namespace MatematicaInteractiva
         public MainWindow()
         {
             InitializeComponent();
-            //hello
+            //hey
            
         }
     }
