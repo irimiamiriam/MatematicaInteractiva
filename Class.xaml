@@ -6,10 +6,28 @@
         xmlns:local="clr-namespace:MatematicaInteractiva"
         mc:Ignorable="d"
         Title="Class" Height="450" Width="800"
-         WindowStartupLocation="CenterScreen"  >
+         WindowStartupLocation="CenterScreen" 
+        >
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="LightGray" 
+                                BorderBrush="Gray" 
+                                BorderThickness="2" 
+                                CornerRadius="20">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
     <Grid>
-        <Button x:Name="noua" Content="Clasa a 9 a " HorizontalAlignment="Left" Height="63" Margin="295,154,0,0" VerticalAlignment="Top" Width="214" Click="noua_Click"/>
-        <Button x:Name="zece" Content="Clasa a 10 a" HorizontalAlignment="Left" Height="63" Margin="295,245,0,0" VerticalAlignment="Top" Width="214" Click="zece_Click"/>
+        <Button x:Name="noua" Content="Clasa a 9 a "  Style="{StaticResource RoundedButtonStyle}" HorizontalAlignment="Left" Height="63" Margin="295,154,0,0" VerticalAlignment="Top" Width="214" Click="noua_Click"/>
+        <Button x:Name="zece" Content="Clasa a 10 a"  Style="{StaticResource RoundedButtonStyle}" HorizontalAlignment="Left" Height="63" Margin="295,245,0,0" VerticalAlignment="Top" Width="214" Click="zece_Click"/>
 
     </Grid>
 </Window>
