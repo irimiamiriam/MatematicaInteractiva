@@ -23,5 +23,22 @@ namespace MatematicaInteractiva
         {
             InitializeComponent();
         }
+
+        private void Label_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Label label = sender as Label;
+            label.Foreground = Brushes.Blue;
+        }
+
+        private void Label_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Label label = sender as Label;
+            label.Foreground = Brushes.Black;
+        }
+
+        private void Label_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

@@ -8,7 +8,21 @@
         Title="Noua" Height="720" Width="1280"
         WindowStartupLocation="CenterScreen" >
     <Grid>
-        <ScrollViewer Margin="0,0,960,0" Height="720"/>
+        <ScrollViewer Margin="0,0,960,0" Height="720">
+            <StackPanel>
+            <Label Content="Mulțimea numerelor reale" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
+                <Label Content="Logica matematică" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
+                <Label Content="Metoda inducției matematice" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
+                <Label Content="Șiruri de numere reale" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
+                <Label Content="Tipuri de șiruri" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
+                <Label Content="Funcții" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
+                <Label Content="Funcția de gradul I" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
+                <Label Content="Funcția de gradul II" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
+                <Label Content="Vectori în plan" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
+                <Label Content="Elemente de trigonometrie" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
+                <Label Content="Trigonometria în geometria plană" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
+             
+            </StackPanel></ScrollViewer>
         <ScrollViewer Margin="320,0,0,0" Height="720"/>
     </Grid>
 </Window>
