@@ -10,20 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace MatematicaInteractiva
 {
-    // <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// <summary>
+    /// Interaction logic for Zece.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Zece : Window
     {
-        public MainWindow()
+        public Zece()
         {
             InitializeComponent();
-           
         }
     }
 }

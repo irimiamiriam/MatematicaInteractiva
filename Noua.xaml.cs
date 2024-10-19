@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace MatematicaInteractiva
 {
     /// <summary>
-    /// Interaction logic for Intro.xaml
+    /// Interaction logic for Noua.xaml
     /// </summary>
-    public partial class Intro : Window
+    public partial class Noua : Window
     {
-        public Intro()
+        public Noua()
         {
             InitializeComponent();
         }

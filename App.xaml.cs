@@ -23,7 +23,7 @@ namespace MatematicaInteractiva
         {
             // Step 1 - Load the splash screen
             SplashScreen splash = new SplashScreen("SplashScreenPNG.png");
-            splash.Show(false, true);
+            splash.Show(false, true);   
 
             // Step 2 - Start a stop watch
             Stopwatch timer = new Stopwatch();
@@ -31,7 +31,7 @@ namespace MatematicaInteractiva
 
             // Step 3 - Load your windows but don't show it yet
 
-            MainWindow main = new MainWindow();
+            Class main = new Class();
             this.MainWindow = main;
 
             base.OnStartup(e);
