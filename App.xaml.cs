@@ -16,13 +16,13 @@ namespace MatematicaInteractiva
     /// </summary>
     public partial class App : Application
     {
-        private const int MINIMUM_SPLASH_TIME = 1500; // Miliseconds
-        private const int SPLASH_FADE_TIME = 500;     // Miliseconds
+        private const int MINIMUM_SPLASH_TIME = 1500;
+        private const int SPLASH_FADE_TIME = 500;
 
         protected override void OnStartup(StartupEventArgs e)
         {
             // Step 1 - Load the splash screen
-            SplashScreen splash = new SplashScreen("SplashScreenPNG.png");
+            SplashScreen splash = new SplashScreen("Splash.png");
             splash.Show(false, true);   
 
             // Step 2 - Start a stop watch

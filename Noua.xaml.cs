@@ -41,7 +41,18 @@ namespace MatematicaInteractiva
 
         private void Label_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            Label label = sender as Label;
+            if(Convert.ToInt16(label.Tag) == 1)
+            {
+                if (PanelCapitol1.Visibility == Visibility.Collapsed)
+                {
+                    PanelCapitol1.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    PanelCapitol1.Visibility = Visibility.Collapsed;
+                }
+            }
         }
     }
 }
