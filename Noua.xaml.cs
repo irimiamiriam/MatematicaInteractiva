@@ -44,13 +44,13 @@ namespace MatematicaInteractiva
             Label label = sender as Label;
             if(Convert.ToInt16(label.Tag) == 1)
             {
-                if (PanelCapitol1.Visibility == Visibility.Collapsed)
+                if (PanelCapitol1_1.Visibility == Visibility.Collapsed)
                 {
-                    PanelCapitol1.Visibility = Visibility.Visible;
+                    PanelCapitol1_1.Visibility = Visibility.Visible;
                 }
                 else
                 {
-                    PanelCapitol1.Visibility = Visibility.Collapsed;
+                    PanelCapitol1_1.Visibility = Visibility.Collapsed;
                 }
             }
         }
