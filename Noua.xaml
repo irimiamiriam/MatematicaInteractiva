@@ -15,12 +15,34 @@
                     <Label Content="I. MULTIMI SI ELEMENTE DE LOGICA MATEMATICA" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
                     <StackPanel>
                         <Label Content="1. Mulțimea numerelor reale" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown" Tag="1"  />
-                        <StackPanel x:Name="PanelCapitol1" Visibility="Collapsed">
-                            <Label Content="1." />
+                        <StackPanel x:Name="PanelCapitol1_1" Visibility="Collapsed">
+                            <Label Content="1.1. Operatii algebrice cu nr reale" />
+                            <Label Content="1.2. Ordonarea numerelor reale" />
+                            <Label Content="1.3. Modului unui nr real" />
+                            <Label Content="1.4. Aproximari prin lipsa sau adaos" />
+                            <Label Content="1.5. Partea intreaga. Partea fractionara" />
+                            <Label Content="1.6. Operatii cu intervale. Generalizare. Tipuri de intervale" />
                         </StackPanel>
-                        <Label Content="2. Propozitii" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Tag="2"/>
-                        <Label Content="3. Operatii logice elementare" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
+                        <Label Content="2. Propoziti. Predicat. Cuantificatori" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Tag="2"/>
+                        <StackPanel x:Name="PanelCapitol1_2" Visibility="Collapsed">
+                            <Label Content="2.1. Enunt. Propozitie. Valoare de adevar" />
+                            <Label Content="2.2. Predicate" />
+                            <Label Content="2.3. Cuantificatori universali/existentiali" />
+                        </StackPanel>
+                        <Label Content="3. Operatii logice elementare corelate cu operatii si relatii cu multimi" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
+                        <StackPanel x:Name="PanelCapitol1_3" Visibility="Collapsed">
+                            <Label Content="3.1. Operatii logice elementare cu propozitii" />
+                            <Label Content="3.2. Formule ale calculului propozitional" />
+                            <Label Content="3.3. Operatii logice cu predicate" />
+                            <Label Content="3.4 Legile lui De Morgan pentru multimi" />
+                            <Label Content="3.5. Reguile de negare a propozitiilor universale si existentiale" />
+                            <Label Content="3.6 Conditii necesare. Conditii suficiente" />
+                        </StackPanel>
                         <Label Content="4. Tipuri de rationamente logice" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
+                        <StackPanel x:Name="PanelCapitol1_4" Visibility="Collapsed">
+                            <Label Content="4.1. Metoda inductiei matematice" />
+                            <Label Content="4.2. Probleme de numarare" />
+                        </StackPanel>
                     </StackPanel>
                     <Label Content="II. FUNCTII" FontSize="16"  FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown" />
                     <StackPanel>
