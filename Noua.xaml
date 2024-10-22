@@ -14,7 +14,7 @@
                 <StackPanel>
                     <Label Content="I. MULTIMI SI ELEMENTE DE LOGICA MATEMATICA" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left"  />
                     <StackPanel>
-                        <Label Content="1. Mulțimea numerelor reale" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown" Tag="1"  />
+                        <Label Content="1. Mulțimea numerelor reale" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown" Tag="Subcapitol 111"  />
                         <StackPanel x:Name="PanelCapitol1_1" Visibility="Collapsed">
                             <Label Content="1.1. Operatii algebrice cu nr reale" />
                             <Label Content="1.2. Ordonarea numerelor reale" />
@@ -23,13 +23,13 @@
                             <Label Content="1.5. Partea intreaga. Partea fractionara" />
                             <Label Content="1.6. Operatii cu intervale. Generalizare. Tipuri de intervale" />
                         </StackPanel>
-                        <Label Content="2. Propoziti. Predicat. Cuantificatori" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Tag="2"/>
+                        <Label Content="2. Propoziti. Predicat. Cuantificatori" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Tag="112"/>
                         <StackPanel x:Name="PanelCapitol1_2" Visibility="Collapsed">
                             <Label Content="2.1. Enunt. Propozitie. Valoare de adevar" />
                             <Label Content="2.2. Predicate" />
                             <Label Content="2.3. Cuantificatori universali/existentiali" />
                         </StackPanel>
-                        <Label Content="3. Operatii logice elementare corelate cu operatii si relatii cu multimi" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  />
+                        <Label Content="3. Operatii logice elementare corelate cu operatii si relatii cu multimi" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Tag="Subcapitol 113"/>
                         <StackPanel x:Name="PanelCapitol1_3" Visibility="Collapsed">
                             <Label Content="3.1. Operatii logice elementare cu propozitii" />
                             <Label Content="3.2. Formule ale calculului propozitional" />
