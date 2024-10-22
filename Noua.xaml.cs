@@ -73,12 +73,8 @@ namespace MatematicaInteractiva
                     {
                         using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read))
                         {
-                            // Try to load the content as a Canvas
+                            
                             Canvas loadedCanvas = (Canvas)XamlReader.Load(fs);
-
-
-
-                            // Add the loaded Canvas to the main Canvas (assuming you have a 'mainCanvas' in your window)
                             panel.Children.Add(loadedCanvas);
                         }
 
