@@ -54,25 +54,28 @@ namespace MatematicaInteractiva
 		{
 			Label label = sender as Label;
 			panel.Children.Clear();
-			if (label.Tag.ToString().Contains("Subcapitol")) showLectiiDinSubcapitol(label);
-
-			foreach (string path in paths)
+			if (label.Tag != null)
 			{
-				if (label.Tag != null)
-				{
-					if (path.Contains(label.Tag.ToString()))
+				if (label.Tag.ToString().Contains("Subcapitol")) { showLectiiDinSubcapitol(label); }
+
+				else {foreach (string path in paths)
 					{
-						using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read))
-						{
-							// Try to load the content as a Canvas
-							Canvas loadedCanvas = (Canvas)XamlReader.Load(fs);
+						
+							if (path.Contains(label.Tag.ToString()))
+							{
+								using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read))
+								{
+									// Try to load the content as a Canvas
+									Canvas loadedCanvas = (Canvas)XamlReader.Load(fs);
 
 
 
-							// Add the loaded Canvas to the main Canvas (assuming you have a 'mainCanvas' in your window)
-							panel.Children.Add(loadedCanvas);
+									// Add the loaded Canvas to the main Canvas (assuming you have a 'mainCanvas' in your window)
+									panel.Children.Add(loadedCanvas);
+								}
+
+							
 						}
-
 					}
 				}
 			}
@@ -82,7 +85,11 @@ namespace MatematicaInteractiva
 		{
 			string[] all=label.Tag.ToString().Split(' ');
 			string tag =all[1];
-			switch(Convert.ToInt32(tag))
+
+		//checkVisibility(tag);
+
+
+			switch (Convert.ToInt32(tag))
 			{
 				case 111:
 					{
@@ -106,10 +113,53 @@ namespace MatematicaInteractiva
 							PanelCapitol1_3.Visibility = Visibility.Visible;
 						else
 							PanelCapitol1_3.Visibility = Visibility.Collapsed;
-						break;  
+						break;
 					}
 			}
 		}
+
+		private void checkVisibility(string tag)
+		{
+            foreach (UIElement element in mainpanelalg.Children)
+            {
+
+                if (element is StackPanel panel)
+                {
+                    foreach (UIElement el in panel.Children)
+                    {
+                        if (el is StackPanel panel2 && panel2.Tag != null)
+                        {
+                            if (panel2.Tag.ToString().Contains(tag))
+                            {
+                                if (panel2.Visibility == Visibility.Visible) { panel2.Visibility = Visibility.Collapsed; }
+                                else { panel2.Visibility = Visibility.Visible; }
+                            }
+                        }
+                    }
+                }
+
+            }
+            foreach (UIElement element in mainpanelgeo.Children)
+            {
+
+                if (element is StackPanel panel)
+                {
+                    foreach (UIElement el in panel.Children)
+                    {
+                        if (el is StackPanel panel2 && panel2.Tag != null)
+                        {
+                            if (panel2.Tag.ToString().Contains(tag))
+                            {
+                                if (panel2.Visibility == Visibility.Visible) { panel2.Visibility = Visibility.Collapsed; }
+                                else { panel2.Visibility = Visibility.Visible; }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
 
 
 	}
