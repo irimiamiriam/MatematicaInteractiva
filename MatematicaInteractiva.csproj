@@ -74,7 +74,7 @@
     <Compile Include="Class.xaml.cs">
       <DependentUpon>Class.xaml</DependentUpon>
     </Compile>
-    <Page Include="Lectii9\Canvas1.xaml">
+    <Page Include="Lectii9\Canvas11.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
