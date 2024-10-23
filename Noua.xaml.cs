@@ -86,36 +86,36 @@ namespace MatematicaInteractiva
 			string[] all=label.Tag.ToString().Split(' ');
 			string tag =all[1];
 
-		//checkVisibility(tag);
+		checkVisibility(tag);
 
 
-			switch (Convert.ToInt32(tag))
-			{
-				case 111:
-					{
-						if (PanelCapitol1_1.Visibility == Visibility.Collapsed)
-							PanelCapitol1_1.Visibility = Visibility.Visible;
-						else
-							PanelCapitol1_1.Visibility = Visibility.Collapsed;
-						break;
-					}
-				case 112:
-					{
-						if (PanelCapitol1_2.Visibility == Visibility.Collapsed)
-							PanelCapitol1_2.Visibility = Visibility.Visible;
-						else
-							PanelCapitol1_2.Visibility = Visibility.Collapsed;
-						break;
-					}
-				case 113:
-					{
-						if (PanelCapitol1_3.Visibility == Visibility.Collapsed)
-							PanelCapitol1_3.Visibility = Visibility.Visible;
-						else
-							PanelCapitol1_3.Visibility = Visibility.Collapsed;
-						break;
-					}
-			}
+			//switch (Convert.ToInt32(tag))
+			//{
+			//	case 111:
+			//		{
+			//			if (PanelCapitol1_1.Visibility == Visibility.Collapsed)
+			//				PanelCapitol1_1.Visibility = Visibility.Visible;
+			//			else
+			//				PanelCapitol1_1.Visibility = Visibility.Collapsed;
+			//			break;
+			//		}
+			//	case 112:
+			//		{
+			//			if (PanelCapitol1_2.Visibility == Visibility.Collapsed)
+			//				PanelCapitol1_2.Visibility = Visibility.Visible;
+			//			else
+			//				PanelCapitol1_2.Visibility = Visibility.Collapsed;
+			//			break;
+			//		}
+			//	case 113:
+			//		{
+			//			if (PanelCapitol1_3.Visibility == Visibility.Collapsed)
+			//				PanelCapitol1_3.Visibility = Visibility.Visible;
+			//			else
+			//				PanelCapitol1_3.Visibility = Visibility.Collapsed;
+			//			break;
+			//		}
+			//}
 		}
 
 		private void checkVisibility(string tag)
