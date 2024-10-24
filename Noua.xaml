@@ -15,8 +15,8 @@
                 <StackPanel x:Name="mainpanelalg">
                     <Label Content="I. MULTIMI SI ELEMENTE DE LOGICA MATEMATICA" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left"  />
                     <StackPanel>
-                        <Label Content="1. Mulțimea numerelor reale" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown" Tag="Subcapitol 111"  />
-                        <StackPanel x:Name="PanelCapitol1_1" Visibility="Collapsed" Tag="111">
+                        <Label Content="1. Mulțimea numerelor reale" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" Margin="10,0,0,0"  HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown" Tag="Subcapitol 111"  />
+                        <StackPanel x:Name="PanelCapitol1_1" Visibility="Collapsed" Tag="111" Margin="10,0,0,0" >
                             <Label Content="1.1. Operatii algebrice cu nr reale" />
                             <Label Content="1.2. Ordonarea numerelor reale" />
                             <Label Content="1.3. Modului unui nr real" />
@@ -24,14 +24,14 @@
                             <Label Content="1.5. Partea intreaga. Partea fractionara" />
                             <Label Content="1.6. Operatii cu intervale. Generalizare. Tipuri de intervale" />
                         </StackPanel>
-                        <Label Content="2. Propoziti. Predicat. Cuantificatori" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Tag="Subcapitol 112"/>
-                        <StackPanel x:Name="PanelCapitol1_2" Visibility="Collapsed" Tag="112">
+                        <Label Content="2. Propoziti. Predicat. Cuantificatori" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" Margin="10,0,0,0"  HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Tag="Subcapitol 112"/>
+                        <StackPanel x:Name="PanelCapitol1_2" Visibility="Collapsed" Tag="112" Margin="10,0,0,0">
                             <Label Content="2.1. Enunt. Propozitie. Valoare de adevar" />
                             <Label Content="2.2. Predicate" />
                             <Label Content="2.3. Cuantificatori universali/existentiali" />
                         </StackPanel>
-                        <Label Content="3. Operatii logice elementare corelate cu operatii si relatii cu multimi" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Tag="Subcapitol 113"/>
-                        <StackPanel x:Name="PanelCapitol1_3" Visibility="Collapsed" Tag="113">
+                        <Label Content="3. Operatii logice elementare corelate cu operatii si relatii cu multimi" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" Margin="10,0,0,0"  HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Tag="Subcapitol 113"/>
+                        <StackPanel x:Name="PanelCapitol1_3" Visibility="Collapsed" Tag="113" Margin="10,0,0,0">
                             <Label Content="3.1. Operatii logice elementare cu propozitii" />
                             <Label Content="3.2. Formule ale calculului propozitional" />
                             <Label Content="3.3. Operatii logice cu predicate" />
@@ -43,20 +43,20 @@
                     <Label Content="II. FUNCTII" FontSize="16"  FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left"  />
                     <StackPanel>
                         <Label Content="1. Siruri de nr reale" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown" Margin="10,0,0,0" Tag="Subcapitol 121"  />
-                        <StackPanel x:Name="PanelCapitol1_5" Visibility="Collapsed" Tag="121">
+                        <StackPanel x:Name="PanelCapitol1_5" Visibility="Collapsed" Tag="121" Margin="10,0,0,0">
                             <Label Content="1.1. Noțiunea de șir de numere reale" />
                             <Label Content="1.2. Șiruri mărginite" />
                             <Label Content="1.3. Șiruri monotone" />
                         </StackPanel>
 
                         <Label Content="2. Tipuri de siruri" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown" Margin="10,0,0,0" Tag="Subcapitol 122" />
-                        <StackPanel x:Name="PanelCapitol1_6" Visibility="Collapsed" Tag="122">
+                        <StackPanel x:Name="PanelCapitol1_6" Visibility="Collapsed" Tag="122" Margin="10,0,0,0">
                             <Label Content="2.1. Progresii aritmetice" />
                             <Label Content="2.2. Progresii geometrice" />
                             <Label Content="2.3. Aplicații" />
                         </StackPanel>
                         <Label Content="3. Lecturi grafice" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown" Margin="10,0,0,0" Tag="Subcapitol 123" />
-                        <StackPanel x:Name="PanelCapitol1_7" Visibility="Collapsed" Tag="123">
+                        <StackPanel x:Name="PanelCapitol1_7" Visibility="Collapsed" Tag="123" Margin="10,0,0,0">
                             <Label Content="3.1. Reper cartezian. Produs cartezian" />
                             <Label Content="3.2. Drept în plan. Forma \(x = m\) sau \(y = mx + b\)" />
                             <Label Content="3.3. Noțiunea de funcție" />
@@ -66,7 +66,7 @@
                             <Label Content="3.7. Funcții numerice" />
                         </StackPanel>
                         <Label Content="4. Proprietati generale ale functiilor" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown" Margin="10,0,0,0" Tag="Subcapitol 124"  />
-                        <StackPanel x:Name="PanelCapitol1_8" Visibility="Collapsed" Tag="124">
+                        <StackPanel x:Name="PanelCapitol1_8" Visibility="Collapsed" Tag="124" Margin="10,0,0,0">
                             <Label Content="4.1. Funcții mărginite" />
                             <Label Content="4.2. Funcții pare. Funcții impare" />
                             <Label Content="4.3. Funcții periodice" />
@@ -103,7 +103,7 @@
                     <Label Content="IV. FUNCTIA DE GRADUL II" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" />
                     <StackPanel >
                         <Label Content="1. Definirea si reprezentarea grafica" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Margin="10,0,0,0" Tag="Subcapitol 141"  />
-                        <StackPanel x:Name="PanelCapitol1_10" Visibility="Collapsed" Tag="141">
+                        <StackPanel x:Name="PanelCapitol1_10" Visibility="Collapsed" Tag="141" Margin="10,0,0,0">
                             <Label Content="1.1. Forma canonică a funcției" />
                             <Label Content="1.2. Maximul și minimul funcției" />
                             <Label Content="1.3. Simetria graficului funcției" />
@@ -116,7 +116,7 @@
 
                         </StackPanel>
                         <Label Content="3. Interpretarea grafica a proprietatilor algebrice" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Margin="10,0,0,0" Tag="Subcapitol 143"/>
-                        <StackPanel x:Name="PanelCapitol1_11" Visibility="Collapsed" Tag="143">
+                        <StackPanel x:Name="PanelCapitol1_11" Visibility="Collapsed" Tag="143" Margin="10,0,0,0">
                             <Label Content="3.1. Monotonia funcției de gradul al doilea" />
                             <Label Content="3.2. Poziționarea parabolei față de axa Ox" />
                             <Label Content="3.3. Monotonia funcției de gradul al doilea" />
@@ -130,7 +130,7 @@
                     <Label Content="I VECTORI IN PLAN" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" />
                     <StackPanel>
                         <Label Content="1. Segmente orientate. Relatia de echipolenta" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Margin="10,0,0,0" Tag="Subcapitol 211"/>
-                        <StackPanel x:Name="PanelCapitol2_1" Visibility="Collapsed" Tag="211">
+                        <StackPanel x:Name="PanelCapitol2_1" Visibility="Collapsed" Tag="211" Margin="10,0,0,0">
                             <Label Content="1.1. Direcția unei drepte în plan" />
                             <Label Content="1.2. Sens pe o dreaptă" />
                             <Label Content="1.3. Sensul a două semidrepte care au aceeași direcție" />
@@ -138,7 +138,7 @@
                             <Label Content="1.5. Relația de echipolență pe mulțimea segmentelor orientate" />
                         </StackPanel>
                         <Label Content="2. Operatii cu vectori" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Margin="10,0,0,0" Tag="Subcapitol 212"/>
-                        <StackPanel x:Name="PanelCapitol2_2" Visibility="Collapsed" Tag="212">
+                        <StackPanel x:Name="PanelCapitol2_2" Visibility="Collapsed" Tag="212" Margin="10,0,0,0">
                             <Label Content="2.1. Adunarea vectorilor în plan" />
                             <Label Content="2.2. Proprietăți ale adunării vectorilor" />
                             <Label Content="2.3. Adunarea mai multor vectori" />
@@ -159,7 +159,7 @@
 
                         </StackPanel>
                         <Label Content="3. Vectorul de pozitie al centrului de greutate in Δ" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Margin="10,0,0,0" Tag="Subcapitol 223" />
-                        <StackPanel x:Name="PanelCapitol2_3" Visibility="Collapsed" Tag="223">
+                        <StackPanel x:Name="PanelCapitol2_3" Visibility="Collapsed" Tag="223" Margin="10,0,0,0">
                             <Label Content="3.1. Centre de greutate" />
                             <Label Content="3.2. Concurența medianelor unui triunghi" />
                         </StackPanel>
@@ -183,7 +183,7 @@
 
                         </StackPanel>
                         <Label Content="3. Functii trigonometrice definite" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Margin="10,0,0,0"   Tag="Subcapitol 233"/>
-                        <StackPanel x:Name="PanelCapitol2_4" Visibility="Collapsed" Tag="233">
+                        <StackPanel x:Name="PanelCapitol2_4" Visibility="Collapsed" Tag="233" Margin="10,0,0,0">
                             <Label Content="3.1. Funcțiile sinus și cosinus" />
                             <Label Content="3.2. Funcțiile tangentă și cotangentă" />
                         </StackPanel>
@@ -215,19 +215,19 @@
                     <Label Content="IV. APLICATII ALE TRIGONOMETRIEI IN GEOMETRIA PLANA" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left"  />
                     <StackPanel>
                         <Label Content="1. Produsul scalar a 2 vectori" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Margin="10,0,0,0"  Tag="Subcapitol 241" />
-                        <StackPanel x:Name="PanelCapitol2_5" Visibility="Collapsed" Tag="241">
+                        <StackPanel x:Name="PanelCapitol2_5" Visibility="Collapsed" Tag="241" Margin="10,0,0,0">
                             <Label Content="1.1. Unghiul a doi vectori" />
                             <Label Content="1.2. Proprietăți ale produsului scalar" />
                             <Label Content="1.3. Teorema cosinusului" />
                             <Label Content="1.4. Teorema sinusurilor" />
                         </StackPanel>
                         <Label Content="2. Aplicatii vectoriale in geometria plana" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"   Margin="10,0,0,0"  Tag="Subcapitol 242"/>
-                        <StackPanel x:Name="PanelCapitol2_6" Visibility="Collapsed" Tag="242">
-                            <Label Content="2.1. Calculul unghiurilor medianelor unui triunghi" />
+                        <StackPanel x:Name="PanelCapitol2_6" Visibility="Collapsed" Tag="242" Margin="10,0,0,0">
+                            <Label Content="2.1. Calculul unghiurilor medianelor unui triunghi"  />
                             <Label Content="2.2. Relația lui Leibniz" />
                         </StackPanel>
                         <Label Content="3. Aplicatii trigonometrice in geometria plana" FontSize="16" FontFamily="Cascadia Code SemiBold" Height="40" Width="311" HorizontalAlignment="Left" MouseEnter="Label_MouseEnter" MouseLeave="Label_MouseLeave" MouseDown="Label_MouseDown"  Margin="10,0,0,0"  Tag="Subcapitol 243"/>
-                        <StackPanel x:Name="PanelCapitol2_7" Visibility="Collapsed" Tag="243">
+                        <StackPanel x:Name="PanelCapitol2_7" Visibility="Collapsed" Tag="243" Margin="10,0,0,0">
                             <Label Content="3.1. Rezolvarea triunghiurilor" />
                             <Label Content="3.2. Raza cercului circumscris" />
                             <Label Content="3.3. Raza cercului înscris, unui triunghi" />
