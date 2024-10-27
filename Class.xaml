@@ -26,8 +26,8 @@
             <Setter Property="Background">
                 <Setter.Value>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                        <GradientStop Color="#FF4C2558" Offset="0.0"/>
-                        <GradientStop Color="#FFCE1BE2" Offset="1.0"/>
+                        <GradientStop Color="#FF155E18" Offset="0.0"/>
+                        <GradientStop Color="#FF54C424" Offset="1.0"/>
                        
 
                     </LinearGradientBrush>
@@ -38,9 +38,6 @@
     </Window.Resources>
 
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/Screenshot 2024-10-24 084445.jpg"/>
-        </Grid.Background>
         <Button x:Name="noua" Content="Clasa a 9 a "  Style="{StaticResource RoundedButtonStyle}" HorizontalAlignment="Left" Height="63" Margin="295,154,0,0" VerticalAlignment="Top" Width="214" Click="noua_Click"/>
         <Button x:Name="zece" Content="Clasa a 10 a"  Style="{StaticResource RoundedButtonStyle}" HorizontalAlignment="Left" Height="63" Margin="295,245,0,0" VerticalAlignment="Top" Width="214" Click="zece_Click"/>
 

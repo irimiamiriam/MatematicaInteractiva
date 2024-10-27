@@ -63,6 +63,9 @@
     <Compile Include="Lectii9\Canvas1111.xaml.cs">
       <DependentUpon>Canvas1111.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PrincipiiInterdisciplinare\Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Zece.xaml.cs">
       <DependentUpon>Zece.xaml</DependentUpon>
     </Compile>
@@ -82,6 +85,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Noua.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrincipiiInterdisciplinare\Main.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

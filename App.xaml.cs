@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MatematicaInteractiva.PrincipiiInterdisciplinare;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -31,7 +32,7 @@ namespace MatematicaInteractiva
 
             // Step 3 - Load your windows but don't show it yet
 
-            Class main = new Class();
+            Main main = new Main();
             this.MainWindow = main;
 
             base.OnStartup(e);
