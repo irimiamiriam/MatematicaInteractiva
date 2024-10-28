@@ -60,6 +60,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Lectii9\Canvas1111.xaml.cs">
+      <DependentUpon>Canvas1111.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Zece.xaml.cs">
       <DependentUpon>Zece.xaml</DependentUpon>
     </Compile>
@@ -74,7 +77,7 @@
     <Compile Include="Class.xaml.cs">
       <DependentUpon>Class.xaml</DependentUpon>
     </Compile>
-    <Page Include="Lectii9\Canvas11.xaml">
+    <Page Include="Lectii9\Canvas1111.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -123,6 +126,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Screenshot 2024-10-24 084445.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="applogo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

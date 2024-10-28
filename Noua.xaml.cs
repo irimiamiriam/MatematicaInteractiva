@@ -65,12 +65,8 @@ namespace MatematicaInteractiva
 							{
 								using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read))
 								{
-									// Try to load the content as a Canvas
+									
 									Canvas loadedCanvas = (Canvas)XamlReader.Load(fs);
-
-
-
-									// Add the loaded Canvas to the main Canvas (assuming you have a 'mainCanvas' in your window)
 									panel.Children.Add(loadedCanvas);
 								}
 
@@ -89,33 +85,7 @@ namespace MatematicaInteractiva
 		checkVisibility(tag);
 
 
-			//switch (Convert.ToInt32(tag))
-			//{
-			//	case 111:
-			//		{
-			//			if (PanelCapitol1_1.Visibility == Visibility.Collapsed)
-			//				PanelCapitol1_1.Visibility = Visibility.Visible;
-			//			else
-			//				PanelCapitol1_1.Visibility = Visibility.Collapsed;
-			//			break;
-			//		}
-			//	case 112:
-			//		{
-			//			if (PanelCapitol1_2.Visibility == Visibility.Collapsed)
-			//				PanelCapitol1_2.Visibility = Visibility.Visible;
-			//			else
-			//				PanelCapitol1_2.Visibility = Visibility.Collapsed;
-			//			break;
-			//		}
-			//	case 113:
-			//		{
-			//			if (PanelCapitol1_3.Visibility == Visibility.Collapsed)
-			//				PanelCapitol1_3.Visibility = Visibility.Visible;
-			//			else
-			//				PanelCapitol1_3.Visibility = Visibility.Collapsed;
-			//			break;
-			//		}
-			//}
+			
 		}
 
 		private void checkVisibility(string tag)

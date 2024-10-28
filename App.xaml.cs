@@ -22,7 +22,7 @@ namespace MatematicaInteractiva
         protected override void OnStartup(StartupEventArgs e)
         {
             // Step 1 - Load the splash screen
-            SplashScreen splash = new SplashScreen("Splash.png");
+            SplashScreen splash = new SplashScreen("applogo.jpg");
             splash.Show(false, true);   
 
             // Step 2 - Start a stop watch
