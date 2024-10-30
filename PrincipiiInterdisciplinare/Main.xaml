@@ -19,8 +19,8 @@
             <Setter Property="Margin" Value="20"/>
             <Setter Property="VerticalContentAlignment" Value="Top"/>
             <Setter Property="HorizontalContentAlignment" Value="Left"/>
-           
-          
+            <EventSetter Event="MouseEnter" Handler="Button_MouseEnter" />
+            <EventSetter Event="MouseLeave" Handler="Button_MouseLeave" />
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">

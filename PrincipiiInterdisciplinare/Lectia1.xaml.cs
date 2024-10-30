@@ -27,7 +27,10 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Lectia1Mate lectia1Mate = new Lectia1Mate();
+            this.Hide();
+            lectia1Mate.ShowDialog();
+            this.Show();
         }
 
         private void Button_MouseEnter(object sender, MouseEventArgs e)
