@@ -1,0 +1,67 @@
+﻿<Window x:Class="MatematicaInteractiva.PrincipiiInterdisciplinare.Lectia1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MatematicaInteractiva.PrincipiiInterdisciplinare"
+        mc:Ignorable="d"
+        Title="Lectia1" Height="450" Width="800"
+         WindowStartupLocation="CenterScreen" Background="#212121">
+    <Window.Resources>
+        <Style x:Key="RoundedSquareButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Height" Value="60"></Setter>
+
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+            <Setter Property="FontFamily" Value="Playwrite GB S"></Setter>
+            <Setter Property="Margin" Value="20"/>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="15" >
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="0,0,0,0"   />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#A9f99e" Offset="0.0"/>
+                        <!-- Very dark green -->
+                        <GradientStop Color="#FF005B0E" Offset="1.0"/>
+
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Label Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Regula de 3 simplă" FontFamily="Playwrite GB S" FontSize="20" Foreground="ForestGreen" FontWeight="DemiBold"></Label>
+        <Label Margin="0,139,0,205"  HorizontalAlignment="Center"  FontFamily="Playwrite GB S" FontSize="15" Foreground="ForestGreen" Width="732" >
+            <TextBlock Text="   Regula de trei simpla e un procedeu folosit atunci când se cunosc trei mărimi, iar a patra este necunoscută și între acestea există o relație de proporționalitate directă sau inversă."
+                      TextWrapping="Wrap" Width="708" />
+        </Label>
+        <Label Margin="34,58,0,292"  HorizontalAlignment="Left"  FontFamily="Playwrite GB S" FontSize="15" Foreground="ForestGreen" Width="292" >
+            <TextBlock  TextWrapping="Wrap" Width="282" Height="67" >   • Clasa a 6-a <LineBreak></LineBreak>  • Algebra </TextBlock>
+        </Label>
+        <Label Margin="0,234,0,152"  HorizontalAlignment="Center" Content="Aplicatii" FontFamily="Playwrite GB S" FontSize="20" Foreground="ForestGreen" FontWeight="DemiBold"></Label>
+        <UniformGrid  Columns="3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,287,0,0">
+            <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Matematica"    />
+            <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Chimie"/>
+            <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Fizica"/>
+
+        </UniformGrid>
+
+    </Grid>
+</Window>
