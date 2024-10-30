@@ -19,6 +19,7 @@
             <Setter Property="Margin" Value="20"/>
             <Setter Property="VerticalContentAlignment" Value="Top"/>
             <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
 
 
             <Setter Property="Template">
@@ -53,13 +54,12 @@
                       TextWrapping="Wrap" Width="708" />
         </Label>
         <Label Margin="34,58,0,292"  HorizontalAlignment="Left"  FontFamily="Playwrite GB S" FontSize="15" Foreground="ForestGreen" Width="292" >
-            <TextBlock  TextWrapping="Wrap" Width="282" Height="67" >   • Clasa a 6-a <LineBreak></LineBreak>  • Algebra </TextBlock>
+            <TextBlock  TextWrapping="Wrap" Width="282" Height="67" >   • Clasa a 6-a <LineBreak></LineBreak>  • Algebra</TextBlock>
         </Label>
-        <Label Margin="0,234,0,152"  HorizontalAlignment="Center" Content="Aplicatii" FontFamily="Playwrite GB S" FontSize="20" Foreground="ForestGreen" FontWeight="DemiBold"></Label>
-        <UniformGrid  Columns="3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,287,0,0">
-            <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Matematica"    />
-            <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Chimie"/>
-            <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Fizica"/>
+        <UniformGrid  Columns="3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,198,0,0" Height="226" Width="732">
+            <Button Style="{StaticResource RoundedSquareButtonStyle}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Content="Matematica" Margin="47,23,47,23" Click="Button_Click"    />
+            <Button Style="{StaticResource RoundedSquareButtonStyle}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Content="Chimie"/>
+            <Button Style="{StaticResource RoundedSquareButtonStyle}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Content="Fizica"/>
 
         </UniformGrid>
 

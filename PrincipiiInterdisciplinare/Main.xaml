@@ -50,7 +50,7 @@
     <Grid>
         <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden">
             <UniformGrid  Columns="3" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,50,0,0">
-                <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Regula de 3 simpla"    />
+                <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Regula de 3 simpla" Click="Button_Click"    />
                 <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 2"/>
                 <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 3"/>
                 <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 4"/>

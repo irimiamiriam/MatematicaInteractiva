@@ -17,8 +17,8 @@ namespace MatematicaInteractiva
     /// </summary>
     public partial class App : Application
     {
-        private const int MINIMUM_SPLASH_TIME = 1500;
-        private const int SPLASH_FADE_TIME = 500;
+        private const int MINIMUM_SPLASH_TIME = 100; //1500
+        private const int SPLASH_FADE_TIME = 100; //500
 
         protected override void OnStartup(StartupEventArgs e)
         {
