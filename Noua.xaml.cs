@@ -53,7 +53,7 @@ namespace MatematicaInteractiva
 		private void Label_MouseDown(object sender, MouseButtonEventArgs e)
 		{
 			Label label = sender as Label;
-			panel.Children.Clear();
+		//	panel.Children.Clear();
 			if (label.Tag != null)
 			{
 				if (label.Tag.ToString().Contains("Subcapitol")) { showLectiiDinSubcapitol(label); }
@@ -67,7 +67,7 @@ namespace MatematicaInteractiva
 								{
 									
 									Canvas loadedCanvas = (Canvas)XamlReader.Load(fs);
-									panel.Children.Add(loadedCanvas);
+									//panel.Children.Add(loadedCanvas);
 								}
 
 							
