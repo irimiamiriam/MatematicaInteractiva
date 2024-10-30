@@ -23,5 +23,13 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Lectia1 lectie = new Lectia1();
+            this.Hide();
+            lectie.ShowDialog();
+            this.Show();
+        }
     }
 }
