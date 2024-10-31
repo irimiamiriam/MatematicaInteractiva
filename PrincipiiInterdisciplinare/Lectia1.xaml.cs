@@ -25,11 +25,19 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonMate_Click(object sender, RoutedEventArgs e)
         {
             Lectia1Mate lectia1Mate = new Lectia1Mate();
             this.Hide();
             lectia1Mate.ShowDialog();
+            this.Show();
+        }
+
+        private void ButtonChimie_Click(object sender, RoutedEventArgs e)
+        {
+            Lectia1Chimie lectia1Chimie = new Lectia1Chimie();
+            this.Hide();
+            lectia1Chimie.ShowDialog();
             this.Show();
         }
 

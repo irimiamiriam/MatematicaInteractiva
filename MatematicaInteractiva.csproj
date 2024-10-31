@@ -66,6 +66,9 @@
     <Compile Include="PrincipiiInterdisciplinare\Lectia1.xaml.cs">
       <DependentUpon>Lectia1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PrincipiiInterdisciplinare\Lectia1Chimie.xaml.cs">
+      <DependentUpon>Lectia1Chimie.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PrincipiiInterdisciplinare\Lectia1Mate.xaml.cs">
       <DependentUpon>Lectia1Mate.xaml</DependentUpon>
     </Compile>
@@ -95,6 +98,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PrincipiiInterdisciplinare\Lectia1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrincipiiInterdisciplinare\Lectia1Chimie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

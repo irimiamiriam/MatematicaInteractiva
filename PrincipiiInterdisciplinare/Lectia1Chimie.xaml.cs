@@ -11,21 +11,18 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using Button = System.Windows.Controls.Button;
 
 namespace MatematicaInteractiva.PrincipiiInterdisciplinare
 {
     /// <summary>
-    /// Interaction logic for Lectia1Mate.xaml
+    /// Interaction logic for Lectia1Chimie.xaml
     /// </summary>
-    public partial class Lectia1Mate : System.Windows.Window
+    public partial class Lectia1Chimie : Window
     {
-        public Lectia1Mate()
+        public Lectia1Chimie()
         {
             InitializeComponent();
         }
-
         private void ButtonRezolvare_Click(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;
@@ -37,13 +34,14 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
                     foreach (UIElement el in panel.Children)
                     {
                         if (el is StackPanel panel2)
-                        {if(panel2.Name.Split('_').Length == 2) 
-                            if (panel2.Name.Split('_')[1]==button.Tag.ToString())
-                            {
-                                if (panel2.Visibility == Visibility.Visible) { panel2.Visibility = Visibility.Collapsed;  panel.Height=160; }
-                                else { panel2.Visibility = Visibility.Visible; panel.Height += panel2.Height; }
-                               
-                            }
+                        {
+                            if (panel2.Name.Split('_').Length == 2)
+                                if (panel2.Name.Split('_')[1] == button.Tag.ToString())
+                                {
+                                    if (panel2.Visibility == Visibility.Visible) { panel2.Visibility = Visibility.Collapsed; panel.Height = 160; }
+                                    else { panel2.Visibility = Visibility.Visible; panel.Height += panel2.Height; }
+
+                                }
                         }
                     }
                 }
@@ -70,7 +68,7 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
             }
 
             // Find the response Label associated with the selected question
-            responseLabel = (Label)mainStackPanel.Children.OfType<StackPanel>().FirstOrDefault(lbl => lbl.Name=="").Children.OfType<Label>().FirstOrDefault(lbl => lbl.Name.StartsWith("raspuns"));
+            responseLabel = (Label)mainStackPanel.Children.OfType<StackPanel>().FirstOrDefault(lbl => lbl.Name == "").Children.OfType<Label>().FirstOrDefault(lbl => lbl.Name.StartsWith("raspuns"));
 
             // Find the selected RadioButton in the current StackPanel
             RadioButton selectedRadioButton = null;
@@ -80,11 +78,11 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
                 if (child is RadioButton radioButton && radioButton.IsChecked == true)
                 {
                     selectedRadioButton = radioButton;
-                    
+
                 }
-                if (child is RadioButton radioButton1 && radioButton1.Tag!=null)
+                if (child is RadioButton radioButton1 && radioButton1.Tag != null)
                 {
-                    correctRadioButton=radioButton1;
+                    correctRadioButton = radioButton1;
                 }
             }
             if (selectedRadioButton != null)

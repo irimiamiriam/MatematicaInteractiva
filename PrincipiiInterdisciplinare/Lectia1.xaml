@@ -57,15 +57,8 @@
             <TextBlock  TextWrapping="Wrap" Width="282" Height="67" >   • Clasa a 6-a <LineBreak></LineBreak>  • Algebra</TextBlock>
         </Label>
         <UniformGrid  Columns="3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,198,0,0" Height="226" Width="732">
-            <Button Style="{StaticResource RoundedSquareButtonStyle}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave"  Content="Matematica" Margin="47,23,47,23" Click="Button_Click"    >
-                <Button.Background>
-                    <LinearGradientBrush>
-                        <GradientStop Color="#FFA9F99E"/>
-                        <GradientStop Color="#FF005B0E" Offset="1"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
-            <Button Style="{StaticResource RoundedSquareButtonStyle}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Content="Chimie"/>
+            <Button Style="{StaticResource RoundedSquareButtonStyle}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave"  Content="Matematica" Margin="47,23,47,23" Click="ButtonMate_Click"    ></Button>
+            <Button Style="{StaticResource RoundedSquareButtonStyle}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Content="Chimie"  Click="ButtonChimie_Click"/>
             <Button Style="{StaticResource RoundedSquareButtonStyle}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Content="Fizica"/>
 
         </UniformGrid>
