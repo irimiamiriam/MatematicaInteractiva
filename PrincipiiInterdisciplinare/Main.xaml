@@ -48,14 +48,14 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden">
-            <UniformGrid  Columns="3" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,50,0,0">
-                <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Regula de 3 simpla" Click="Button_Click"    />
-                <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 2"/>
-                <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 3"/>
-                <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 4"/>
-                <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 5"/>
-                <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 6"/>
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
+            <UniformGrid Name="buttonsGrid" Columns="3" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,50,0,0">
+                <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Regula de 3 simpla" Click="Button_Click"  Tag="1"  />
+                <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 2" Click="Button_Click" Tag="2"/>
+                <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 3" Click="Button_Click" Tag="3"/>
+                <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 4" Click="Button_Click" Tag="4"/>
+                <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 5" Tag="5" Click="Button_Click"/>
+                <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 6" Tag="6" Click="Button_Click"/>
                 <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 7" />
                 <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 8"/>
                 <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 9"/>

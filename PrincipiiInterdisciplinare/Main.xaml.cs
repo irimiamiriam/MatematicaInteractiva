@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -27,10 +29,18 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Lectia1 lectie = new Lectia1();
+            Button button = (Button)sender;
+            string tag = button.Tag as string;
+            var assembly = Assembly.GetExecutingAssembly();
+
+            // Find all types that are Windows and contain the specified number in their name
+            var windowType = assembly.GetTypes()
+                                     .Where(t => t.IsSubclassOf(typeof(Window)) && t.Name=="Lectia"+tag)
+                                     .FirstOrDefault();
+            var windowInstance = (Window)Activator.CreateInstance(windowType);
             this.Hide();
-            lectie.ShowDialog();
-            this.Show();
+            windowInstance.Show();
+            windowInstance.Closed += (s, args) => this.Show();
         }
         private void Button_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -56,6 +66,20 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
             DoubleAnimation scaleDownAnimation = new DoubleAnimation(1, TimeSpan.FromMilliseconds(100));
             scaleTransform.BeginAnimation(ScaleTransform.ScaleXProperty, scaleDownAnimation);
             scaleTransform.BeginAnimation(ScaleTransform.ScaleYProperty, scaleDownAnimation);
+        }
+
+        private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            var scrollViewer = sender as ScrollViewer;
+            if (scrollViewer != null)
+            {
+                // Adjust this factor to increase or decrease scroll speed
+                double scrollSpeedFactor = 1; // Increase this value for faster scrolling
+
+                // Scroll the ScrollViewer by a factor of the delta
+                scrollViewer.ScrollToVerticalOffset(scrollViewer.VerticalOffset - e.Delta * scrollSpeedFactor);
+                e.Handled = true; // Mark event as handled to prevent default scrolling
+            }
         }
     }
 }
