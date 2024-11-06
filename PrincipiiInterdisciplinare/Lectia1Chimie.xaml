@@ -84,7 +84,7 @@
                         <Label Name="raspuns1" Content="" Margin="5,0,0,0"/>
                     </StackPanel>
                     <StackPanel x:Name="panel_1" Visibility="Collapsed" Background="#FF9ECAA4">
-                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Proporționalitate directă: mai mulți moli de hidrogen necesită mai mulți moli de oxigen.2 moli H₂ → 1 mol O₂,6 moli H₂ → x moli O₂, x = (6 × 1) / 2 = 3 moli O₂"
+                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Proporționalitate directă: mai mulți moli de hidrogen necesită mai mulți moli de oxigen.&#x0a; 2 moli H₂ → 1 mol O₂&#x0a; 6 moli H₂ → x moli O₂&#x0a;  x = (6 × 1) / 2 = 3 moli O₂"
 TextWrapping="Wrap"  FontSize="10"/>
                     </StackPanel>
                 </StackPanel>
@@ -123,7 +123,7 @@ TextWrapping="Wrap"  FontSize="10"/>
                         <Label Name="raspuns3" Content="" Margin="5,0,0,0"/>
                     </StackPanel>
                     <StackPanel x:Name="panel_3" Visibility="Collapsed" Background="#FF9ECAA4">
-                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text=" Formula: numar de moli = concentratie molara x volum solutie. => volum solutie initial = 100/2 = 50ml HCl.  Problema este una de proporționalitate directa, 50ml HCl → 25ml Cl, x ml HCl → 75ml Cl,x = (50 × 75) / 25 = 150ml HCl"
+                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text=" Formula: numar de moli = concentratie molara x volum solutie. => volum solutie initial = 100/2 = 50ml HCl.&#x0a;  Problema este una de proporționalitate directa.&#x0a; 50ml HCl → 25ml Cl&#x0a; x ml HCl → 75ml Cl&#x0a; x = (50 × 75) / 25 = 150ml HCl"
 TextWrapping="Wrap"  FontSize="10"/>
                     </StackPanel>
                 </StackPanel>
@@ -142,7 +142,7 @@ TextWrapping="Wrap"  FontSize="10"/>
                         <Label Name="raspuns4" Content="" Margin="5,0,0,0"/>
                     </StackPanel>
                     <StackPanel x:Name="panel_4" Visibility="Collapsed" Background="#FF9ECAA4">
-                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="   Formula: numar de moli = concentratie molara x volum solutie. => volum solutie initial = 135/1.5 = 90ml NaOH.  Problema este una de proporționalitate directa, 90ml HCl → 20ml H₂O, x ml NaOH → 140ml H₂O,x = (90 × 140) / 20 = 630 ml NaOH"
+                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="   Formula: numar de moli = concentratie molara x volum solutie. => volum solutie initial = 135/1.5 = 90ml NaOH.&#x0a;  Problema este una de proporționalitate directa.&#x0a; 90ml HCl → 20ml H₂O&#x0a; x ml NaOH → 140ml H₂O&#x0a; x = (90 × 140) / 20 = 630 ml NaOH"
 TextWrapping="Wrap"  FontSize="10"/>
                     </StackPanel>
                 </StackPanel>
@@ -161,7 +161,7 @@ TextWrapping="Wrap"  FontSize="10"/>
                         <Label Name="raspuns5" Content="" Margin="5,0,0,0"/>
                     </StackPanel>
                     <StackPanel x:Name="panel_5" Visibility="Collapsed" Background="#FF9ECAA4">
-                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Formula: puritate = (masa pură / masa impură) x 100. => masa pură inițial = (95 x 300)/100  = 285g H₂SO₄ .  Problema este una de proporționalitate directa, 285g H₂SO₄ → 15g ZnSO₄, x g H₂SO₄ → 8g ZnSO₄,x = (285 × 8) / 15 = 152 g H₂SO₄"
+                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Formula: puritate = (masa pură / masa impură) x 100. => masa pură inițial = (95 x 300)/100  = 285g H₂SO₄.&#x0a;   Problema este una de proporționalitate directa.&#x0a;  285g H₂SO₄ → 15g ZnSO₄&#x0a; x g H₂SO₄ → 8g ZnSO₄&#x0a; x = (285 × 8) / 15 = 152 g H₂SO₄"
 TextWrapping="Wrap"  FontSize="10"/>
                     </StackPanel>
                 </StackPanel>
@@ -180,7 +180,7 @@ TextWrapping="Wrap"  FontSize="10"/>
                         <Label Name="raspuns6" Content="" Margin="5,0,0,0"/>
                     </StackPanel>
                     <StackPanel x:Name="panel_6" Visibility="Collapsed" Background="#FF9ECAA4">
-                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Formula: puritate = (masa pură / masa soluție) x 100. => masa pură inițial = (90 x 500)/100 = 450g HCl. Problema este una de proporționalitate directă, 450g HCl → 25g NaCl, x g HCl → 10g NaCl, x = (450 × 10) / 25 = 180 g HCl."
+                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Formula: puritate = (masa pură / masa soluție) x 100. => masa pură inițial = (90 x 500)/100 = 450g HCl.&#x0a; Problema este una de proporționalitate directă.&#x0a; 450g HCl → 25g NaCl&#x0a; x g HCl → 10g NaCl&#x0a; x = (450 × 10) / 25 = 180 g HCl."
 TextWrapping="Wrap"  FontSize="10"/>
                     </StackPanel>
                 </StackPanel>

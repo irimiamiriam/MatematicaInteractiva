@@ -30,7 +30,13 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
             Lectia1Mate lectia1Mate = new Lectia1Mate();
             this.Hide();
             lectia1Mate.Show();
-            lectia1Mate.Closed += (s, args) => this.Show();
+            lectia1Mate.Closed += (s, args) =>
+            {
+                if (!Main.IsShuttingDown)
+                {
+                    this.Show();
+                }
+            };
 
 
         }

@@ -22,6 +22,9 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
     /// </summary>
     public partial class Main : Window
     {
+        public static bool IsShuttingDown = false;
+
+
         public Main()
         {
             InitializeComponent();
@@ -40,7 +43,14 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
             var windowInstance = (Window)Activator.CreateInstance(windowType);
             this.Hide();
             windowInstance.Show();
-            windowInstance.Closed += (s, args) => this.Show();
+
+            windowInstance.Closed += (s, args) => {
+                if (!Main.IsShuttingDown)
+                {
+                    this.Show();
+                }
+            };
+              
         }
         private void Button_MouseEnter(object sender, MouseEventArgs e)
         {

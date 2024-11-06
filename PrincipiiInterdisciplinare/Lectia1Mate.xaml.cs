@@ -108,5 +108,20 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
                 e.Handled = true; // Mark event as handled to prevent default scrolling
             }
         }
+
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+      
+
+        private void ButtonExit_Click(object sender, RoutedEventArgs e)
+        {
+            Main.IsShuttingDown = true;
+            Application.Current.Shutdown();
+            
+        }
+      
     }
 }

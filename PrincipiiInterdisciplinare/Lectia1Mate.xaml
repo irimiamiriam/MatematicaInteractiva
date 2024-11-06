@@ -10,8 +10,7 @@
 
     <Window.Resources>
         <Style x:Key="RoundedSquareButtonStyle" TargetType="Button">
-            <Setter Property="Width" Value="150"/>
-            <Setter Property="Height" Value="60"></Setter>
+
             <Setter Property="BorderBrush" Value="Gray"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="VerticalContentAlignment" Value="Top"/>
@@ -68,8 +67,12 @@
     </Window.Resources>
 
     <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Height="82" Width="108" Margin="0,-8,8,0">
+            <Button Style="{StaticResource RoundedSquareButtonStyle}" Margin="0,0,0,0"  Width="40" Height="40" Click="ButtonBack_Click" ></Button>
+            <Button Style="{StaticResource RoundedSquareButtonStyle}"  Width="40" Height="40" Click="ButtonExit_Click"/>
+        </StackPanel>
         <ScrollViewer x:Name="MyScrollViewer" IsManipulationEnabled="True"
-              PreviewMouseWheel="ScrollViewer_PreviewMouseWheel"  HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
+              PreviewMouseWheel="ScrollViewer_PreviewMouseWheel"  HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" Margin="130,0,108,0">
             <StackPanel Width="368"  Margin="0,40,0,0" Name="MainStackPanel" >
                 <StackPanel x:Name="MainStackPanel_1" Height="160" Background="#FF9ECAA4">
                     <Label  HorizontalAlignment="Center"  FontFamily="Playwrite GB S" FontSize="13" Foreground="ForestGreen" Width="372" Height="73" >
@@ -81,12 +84,12 @@
                     <RadioButton Content="380" GroupName="AnotherGroup1" Style="{StaticResource CustomRadioButtonStyle}"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0">
                         <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Verifica" Height="20" Width="61"  HorizontalAlignment="Left" Margin="5,0,0,0" Click="ButtonVerifica_Click" Tag="1"/>
-                    <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Rezolvare" Height="20" Width="61"  HorizontalAlignment="Left" Margin="5,0,0,0" Click="ButtonRezolvare_Click" Tag="1"/>
-                    <Label Name="raspuns1" Content="" Margin="5,0,0,0"/>
+                        <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Rezolvare" Height="20" Width="61"  HorizontalAlignment="Left" Margin="5,0,0,0" Click="ButtonRezolvare_Click" Tag="1"/>
+                        <Label Name="raspuns1" Content="" Margin="5,0,0,0"/>
                     </StackPanel>
                     <StackPanel x:Name="panel_1" Visibility="Collapsed" Background="#FF9ECAA4">
                         <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Problema este una de proporționalitate directă, deoarece numărul de decalitri de apă care curge este direct proporțional cu numărul de robinete.
- 462 robinete → 330 decalitri, 280 robinete → x decalitri, deci x= (280 x 330)/462=200"
+ &#x0a;  462 robinete → 330 decalitri&#x0a;  280 robinete → x decalitri&#x0a;   x= (280 x 330)/462=200"
 TextWrapping="Wrap"  FontSize="10"/>
                     </StackPanel>
                 </StackPanel>
@@ -106,28 +109,28 @@ TextWrapping="Wrap"  FontSize="10"/>
                         <Label Name="raspuns2" Content="" Margin="5,0,0,0"/>
                     </StackPanel>
                     <StackPanel x:Name="panel_2" Visibility="Collapsed" Background="#FF9ECAA4">
-                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Problema este una de proporționalitate directă, 720 muncitori → 180 km, 480 muncitori → x km, x = (480 × 180) / 720 = 120 km"
+                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Problema este una de proporționalitate directă.&#x0a;  720 muncitori → 180 km&#x0a;  480 muncitori → x km&#x0a;  x = (480 × 180) / 720 = 120 km"
 TextWrapping="Wrap"  FontSize="10"/>
                     </StackPanel>
                 </StackPanel>
 
                 <StackPanel x:Name="MainStackPanel_3" Height="160" Background="#FF9ECAA4" Margin="0,10,0,0">
-                        <Label  HorizontalAlignment="Center"  FontFamily="Playwrite GB S" FontSize="13" Foreground="ForestGreen" Width="372" Height="73" >
+                    <Label  HorizontalAlignment="Center"  FontFamily="Playwrite GB S" FontSize="13" Foreground="ForestGreen" Width="372" Height="73" >
                         <TextBlock Text=" Dacă 8 pompe golesc un bazin în 6 ore, în cât timp ar putea 12 pompe să golească același bazin?"
                TextWrapping="Wrap" Width="362" Height="64" />
-                        </Label>
-                        <RadioButton Content="4 ore" GroupName="AnotherGroup3" Style="{StaticResource CustomRadioButtonStyle}" Tag="Corect"/>
-                        <RadioButton Content="16 ore" GroupName="AnotherGroup3" Style="{StaticResource CustomRadioButtonStyle}"/>
-                        <RadioButton Content="9 ore" GroupName="AnotherGroup3" Style="{StaticResource CustomRadioButtonStyle}"/>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0">
+                    </Label>
+                    <RadioButton Content="4 ore" GroupName="AnotherGroup3" Style="{StaticResource CustomRadioButtonStyle}" Tag="Corect"/>
+                    <RadioButton Content="16 ore" GroupName="AnotherGroup3" Style="{StaticResource CustomRadioButtonStyle}"/>
+                    <RadioButton Content="9 ore" GroupName="AnotherGroup3" Style="{StaticResource CustomRadioButtonStyle}"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0">
                         <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Verifica" Height="20" Width="61"  HorizontalAlignment="Left" Margin="5,0,0,0" Click="ButtonVerifica_Click" Tag="3"/>
-                            <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Rezolvare" Height="20" Width="61"  HorizontalAlignment="Left" Margin="5,0,0,0" Click="ButtonRezolvare_Click" Tag="3"/>
+                        <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Rezolvare" Height="20" Width="61"  HorizontalAlignment="Left" Margin="5,0,0,0" Click="ButtonRezolvare_Click" Tag="3"/>
                         <Label Name="raspuns3" Content="" Margin="5,0,0,0"/>
                     </StackPanel>
-                        <StackPanel x:Name="panel_3" Visibility="Collapsed" Background="#FF9ECAA4">
-                            <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Problema este una de proporționalitate inversa, 8 pompe → 6 ore, 12 pompe → x ore,x = (8 × 6) / 12 = 4 ore"
+                    <StackPanel x:Name="panel_3" Visibility="Collapsed" Background="#FF9ECAA4">
+                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Problema este una de proporționalitate inversa&#x0a;  8 pompe → 6 ore&#x0a;  12 pompe → x ore&#x0a;  x = (8 × 6) / 12 = 4 ore"
 TextWrapping="Wrap"  FontSize="10"/>
-                        </StackPanel>
+                    </StackPanel>
                 </StackPanel>
 
                 <StackPanel x:Name="MainStackPanel_4" Height="160" Background="#FF9ECAA4" Margin="0,10,0,0">
@@ -144,7 +147,7 @@ TextWrapping="Wrap"  FontSize="10"/>
                         <Label Name="raspuns4" Content="" Margin="5,0,0,0"/>
                     </StackPanel>
                     <StackPanel x:Name="panel_4" Visibility="Collapsed" Background="#FF9ECAA4">
-                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Problema este una de proporționalitate inversa,12 grădinari → 1 zi,8 grădinari → x zile,x = (12 × 1) / 8 = 1,5 zile"
+                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Problema este una de proporționalitate inversa.&#x0a;  12 grădinari → 1 zi&#x0a;  8 grădinari → x zile&#x0a;  x = (12 × 1) / 8 = 1,5 zile"
 TextWrapping="Wrap"  FontSize="10"/>
                     </StackPanel>
                 </StackPanel>
@@ -163,7 +166,7 @@ TextWrapping="Wrap"  FontSize="10"/>
                         <Label Name="raspuns5" Content="" Margin="5,0,0,0"/>
                     </StackPanel>
                     <StackPanel x:Name="panel_5" Visibility="Collapsed" Background="#FF9ECAA4">
-                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Problema este una de proporționalitate directa, 50 hectare → 300 litri,80 hectare → x litri ,x = (80 × 300) / 50 = 480 litri"
+                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Problema este una de proporționalitate directa.&#x0a;  50 hectare → 300 litri&#x0a;  80 hectare → x litri&#x0a;  x = (80 × 300) / 50 = 480 litri"
 TextWrapping="Wrap"  FontSize="10"/>
                     </StackPanel>
                 </StackPanel>
@@ -182,7 +185,7 @@ TextWrapping="Wrap"  FontSize="10"/>
                         <Label Name="raspuns6" Content="" Margin="5,0,0,0"/>
                     </StackPanel>
                     <StackPanel x:Name="panel_6" Visibility="Collapsed" Background="#FF9ECAA4">
-                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Problema este una de proporționalitate inversa, 3 muncitori → 15 ore, 5 muncitori → x ore, x = (3 × 15) / 5 = 9 ore"
+                        <TextBlock FontFamily="Playwrite GB S" Foreground="ForestGreen" Text="  Problema este una de proporționalitate inversa.&#x0a;   3 muncitori → 15 ore&#x0a;   5 muncitori → x ore&#x0a;   x = (3 × 15) / 5 = 9 ore"
 TextWrapping="Wrap"  FontSize="10"/>
                     </StackPanel>
                 </StackPanel>
