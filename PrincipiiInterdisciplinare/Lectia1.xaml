@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MatematicaInteractiva.PrincipiiInterdisciplinare"
         mc:Ignorable="d"
         Title="Lectia1" Height="450" Width="800"
-         WindowStartupLocation="CenterScreen" Background="#212121">
+         WindowStartupLocation="CenterScreen" Background="#212121"  WindowStyle="None" ResizeMode="NoResize">
     <Window.Resources>
         <Style x:Key="RoundedSquareButtonStyle" TargetType="Button">
             <Setter Property="Width" Value="150"/>
@@ -28,7 +28,7 @@
                         <Border Background="{TemplateBinding Background}"
                         BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="{TemplateBinding BorderThickness}"
-                        CornerRadius="15" >
+                        CornerRadius="5" >
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="0,0,0,0"   />
                         </Border>
                     </ControlTemplate>
@@ -48,20 +48,31 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <Label Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Regula de 3 simplă" FontFamily="Playwrite GB S" FontSize="20" Foreground="ForestGreen" FontWeight="DemiBold"></Label>
-        <Label Margin="0,139,0,205"  HorizontalAlignment="Center"  FontFamily="Playwrite GB S" FontSize="15" Foreground="ForestGreen" Width="732" >
-            <TextBlock Text="   Regula de trei simpla e un procedeu folosit atunci când se cunosc trei mărimi, iar a patra este necunoscută și între acestea există o relație de proporționalitate directă sau inversă."
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Height="82" Width="108" Margin="0,-8,8,0">
+            <Button Style="{StaticResource RoundedSquareButtonStyle}"  Margin="0,0,0,0"  MouseEnter="Button_MouseEnter_1" MouseLeave="Button_MouseLeave_1" Background="#FF005B0E" Width="40" Height="40" Click="ButtonBack_Click" >
+                <Button.Content>
+                    <Image Source="pack://application:,,,/Images/arrowback.png" Stretch="UniformToFill"/>
+                </Button.Content>
+            </Button>
+            <Button Style="{StaticResource RoundedSquareButtonStyle}" MouseEnter="Button_MouseEnter_1" MouseLeave="Button_MouseLeave_1"  Background="#FF005B0E" Width="40" Height="40" Click="ButtonExit_Click">
+                <Button.Content>
+                    <Image Source="pack://application:,,,/Images/exit.png" Stretch="UniformToFill"/>
+                </Button.Content>
+            </Button>
+        </StackPanel >
+        <StackPanel>
+            <Label Margin="0,40,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Regula de 3 simplă" FontFamily="Playwrite GB S" FontSize="20" Foreground="ForestGreen" FontWeight="DemiBold"></Label>
+           
+            <Label Margin="0,10,0,205"  HorizontalAlignment="Center"  FontFamily="Playwrite GB S" FontSize="15" Foreground="ForestGreen" Width="732" >
+                <TextBlock Text="   Regula de trei simpla e un procedeu folosit atunci când se cunosc trei mărimi, iar a patra este necunoscută și între acestea există o relație de proporționalitate directă sau inversă."
                       TextWrapping="Wrap" Width="708" />
-        </Label>
-        <Label Margin="34,58,0,292"  HorizontalAlignment="Left"  FontFamily="Playwrite GB S" FontSize="15" Foreground="ForestGreen" Width="292" >
-            <TextBlock  TextWrapping="Wrap" Width="282" Height="67" >   • Clasa a 6-a <LineBreak></LineBreak>  • Algebra</TextBlock>
-        </Label>
-        <UniformGrid  Columns="3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,198,0,0" Height="226" Width="732">
-            <Button Style="{StaticResource RoundedSquareButtonStyle}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave"  Content="Matematica" Margin="47,23,47,23" Click="ButtonMate_Click"    ></Button>
-            <Button Style="{StaticResource RoundedSquareButtonStyle}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Content="Chimie"  Click="ButtonChimie_Click"/>
-            <Button Style="{StaticResource RoundedSquareButtonStyle}" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Content="Fizica"/>
+            </Label>
+            <UniformGrid  Columns="3" HorizontalAlignment="Center" Margin="0,-100,0,0" Height="142" Width="732">
+                <Button Style="{StaticResource RoundedSquareButtonStyle}" MouseEnter="Button_MouseEnter_1" MouseLeave="Button_MouseLeave_1"  Content="Matematica" Margin="47,23,47,23" Click="ButtonMate_Click"    ></Button>
+                <Button Style="{StaticResource RoundedSquareButtonStyle}" MouseEnter="Button_MouseEnter_1" MouseLeave="Button_MouseLeave_1" Content="Chimie"  Click="ButtonChimie_Click"/>
+                <Button Style="{StaticResource RoundedSquareButtonStyle}" MouseEnter="Button_MouseEnter_1" MouseLeave="Button_MouseLeave_1" Content="Fizica"/>
 
-        </UniformGrid>
-
+            </UniformGrid>
+        </StackPanel>
     </Grid>
 </Window>

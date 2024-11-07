@@ -122,6 +122,15 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
             Application.Current.Shutdown();
             
         }
-      
+
+        private void Button_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Lectia1.Button_MouseEnter(sender, e);
+        }
+
+        private void Button_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Lectia1.Button_MouseLeave(sender, e);
+        }
     }
 }

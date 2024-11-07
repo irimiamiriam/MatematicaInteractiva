@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MatematicaInteractiva.PrincipiiInterdisciplinare"
         mc:Ignorable="d"
         Title="Main" Height="450" Width="800"
-         WindowStartupLocation="CenterScreen" Background="#212121">
+         WindowStartupLocation="CenterScreen" Background="#212121" WindowStyle="None" ResizeMode="NoResize">
     <Window.Resources>
         <Style x:Key="RoundedSquareButtonStyle" TargetType="Button">
             <Setter Property="Width" Value="150"/>
@@ -27,7 +27,7 @@
                         <Border Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
-                            CornerRadius="15" >
+                            CornerRadius="5" >
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="0,0,0,0"   />
                         </Border>
                     </ControlTemplate>
@@ -48,7 +48,12 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Height="82" Width="66" Margin="0,-8,8,0">
+            <Button Style="{StaticResource RoundedSquareButtonStyle}" Background="#FF005B0E" Width="40" Height="40" Click="ButtonExit_Click">
+                <Image Source="pack://application:,,,/Images/exit.png" Stretch="UniformToFill"/>
+            </Button>
+        </StackPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" Margin="99,0,79,0">
             <UniformGrid Name="buttonsGrid" Columns="3" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,50,0,0">
                 <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Regula de 3 simpla" Click="Button_Click"  Tag="1"  />
                 <Button Style="{StaticResource RoundedSquareButtonStyle}" Content="Button 2" Click="Button_Click" Tag="2"/>

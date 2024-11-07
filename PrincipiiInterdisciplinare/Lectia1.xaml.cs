@@ -41,12 +41,12 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
 
         }
 
-        private void ButtonChimie_Click(object sender, RoutedEventArgs e)
+        private  void ButtonChimie_Click(object sender, RoutedEventArgs e)
         {
             Lectia1Chimie lectia1Chimie = new Lectia1Chimie();
             this.Hide();
             lectia1Chimie.Show();
-            lectia1Chimie.Closed += (s, args) => this.Show();
+            lectia1Chimie.Closed += (s, args) => {  this.Show(); };
 
         }
 
@@ -60,7 +60,7 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
 
         }
 
-        private void Button_MouseEnter(object sender, MouseEventArgs e)
+        public  static void Button_MouseEnter(object sender, MouseEventArgs e)
         {
             Button button = sender as Button;
 
@@ -75,7 +75,7 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
             scaleTransform.BeginAnimation(ScaleTransform.ScaleYProperty, scaleUpAnimation);
         }
 
-        private void Button_MouseLeave(object sender, MouseEventArgs e)
+        public static void Button_MouseLeave(object sender, MouseEventArgs e)
         {
             Button button = sender as Button;
             ScaleTransform scaleTransform = button.RenderTransform as ScaleTransform;
@@ -84,6 +84,30 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
             DoubleAnimation scaleDownAnimation = new DoubleAnimation(1, TimeSpan.FromMilliseconds(100));
             scaleTransform.BeginAnimation(ScaleTransform.ScaleXProperty, scaleDownAnimation);
             scaleTransform.BeginAnimation(ScaleTransform.ScaleYProperty, scaleDownAnimation);
+        }
+        
+        private  void ButtonBack_Click(object sender, RoutedEventArgs e)
+        {
+             this.Close();
+        }
+
+
+
+        private void ButtonExit_Click(object sender, RoutedEventArgs e)
+        {
+            Main.IsShuttingDown = true;
+            Application.Current.Shutdown();
+
+        }
+
+        private void Button_MouseEnter_1(object sender, MouseEventArgs e)
+        {
+            Lectia1.Button_MouseEnter(sender, e);
+        }
+
+        private void Button_MouseLeave_1(object sender, MouseEventArgs e)
+        {
+            Lectia1.Button_MouseLeave(sender, e);
         }
     }
 }

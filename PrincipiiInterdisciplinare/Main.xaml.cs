@@ -30,7 +30,7 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;
             string tag = button.Tag as string;
@@ -41,10 +41,13 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
                                      .Where(t => t.IsSubclassOf(typeof(Window)) && t.Name=="Lectia"+tag)
                                      .FirstOrDefault();
             var windowInstance = (Window)Activator.CreateInstance(windowType);
-            this.Hide();
-            windowInstance.Show();
 
-            windowInstance.Closed += (s, args) => {
+           windowInstance.Show();
+            await Task.Delay(200);
+            this.Hide();
+
+           
+            windowInstance.Closed += async (s, args) => { 
                 if (!Main.IsShuttingDown)
                 {
                     this.Show();
@@ -90,6 +93,12 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
                 scrollViewer.ScrollToVerticalOffset(scrollViewer.VerticalOffset - e.Delta * scrollSpeedFactor);
                 e.Handled = true; // Mark event as handled to prevent default scrolling
             }
+        }
+        private void ButtonExit_Click(object sender, RoutedEventArgs e)
+        {
+            Main.IsShuttingDown = true;
+            Application.Current.Shutdown();
+
         }
     }
 }

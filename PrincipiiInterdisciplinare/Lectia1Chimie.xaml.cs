@@ -19,9 +19,12 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
     /// </summary>
     public partial class Lectia1Chimie : Window
     {
+       
+
         public Lectia1Chimie()
         {
             InitializeComponent();
+           
         }
         private void ButtonRezolvare_Click(object sender, RoutedEventArgs e)
         {
@@ -105,6 +108,29 @@ namespace MatematicaInteractiva.PrincipiiInterdisciplinare
                 scrollViewer.ScrollToVerticalOffset(scrollViewer.VerticalOffset - e.Delta * scrollSpeedFactor);
                 e.Handled = true; // Mark event as handled to prevent default scrolling
             }
+        }
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+
+
+        private void ButtonExit_Click(object sender, RoutedEventArgs e)
+        {
+            Main.IsShuttingDown = true;
+            Application.Current.Shutdown();
+
+        }
+
+        private void Button_MouseEnter(object sender, MouseEventArgs e)
+        {
+          Lectia1.Button_MouseEnter(sender, e);
+        }
+
+        private void Button_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Lectia1.Button_MouseLeave(sender, e);
         }
     }
 }

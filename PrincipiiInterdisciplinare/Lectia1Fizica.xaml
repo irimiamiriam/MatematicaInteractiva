@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MatematicaInteractiva.PrincipiiInterdisciplinare"
         mc:Ignorable="d"
         Title="Lectia1Fizica" Height="450" Width="800"
-         WindowStartupLocation="CenterScreen" Background="#212121">
+         WindowStartupLocation="CenterScreen" Background="#212121"  WindowStyle="None" ResizeMode="NoResize">
 
     <Window.Resources>
         <Style x:Key="RoundedSquareButtonStyle" TargetType="Button">
@@ -68,6 +68,18 @@
     </Window.Resources>
 
     <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Height="82" Width="108" Margin="0,-8,8,0">
+            <Button Style="{StaticResource RoundedSquareButtonStyle}" Margin="0,0,0,0" MouseLeave="Button_MouseLeave" MouseEnter="Button_MouseEnter" Background="#FF9ECAA4" Width="40" Height="40" Click="ButtonBack_Click" >
+                <Button.Content>
+                    <Image Source="pack://application:,,,/Images/arrowback.png" Stretch="UniformToFill"/>
+                </Button.Content>
+            </Button>
+            <Button Style="{StaticResource RoundedSquareButtonStyle}" Background="#FF9ECAA4" Width="40" Height="40" Click="ButtonExit_Click">
+                <Button.Content>
+                    <Image Source="pack://application:,,,/Images/exit.png" Stretch="UniformToFill"/>
+                </Button.Content>
+            </Button>
+        </StackPanel>
         <ScrollViewer x:Name="MyScrollViewer" IsManipulationEnabled="True"
               PreviewMouseWheel="ScrollViewer_PreviewMouseWheel"  HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
             <StackPanel Width="368"  Margin="0,40,0,0" Name="MainStackPanel" >
